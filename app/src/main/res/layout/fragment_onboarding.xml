@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    tools:context=".OnboardingFragment">
+
+    <ImageView
+        android:id="@+id/gifView"
+        android:layout_width="216dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/gif_two" />
+
+    <ImageButton
+        android:id="@+id/btn_to_signin"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="305dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        android:background="@null"
+        android:src="@drawable/ic_next"
+        android:tint="#C52F7F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="375dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_rounded_pink"
+        android:backgroundTint="#C52F7F"
+        android:fontFamily="@font/montserrat_semibold"
+        android:paddingLeft="13dp"
+        android:paddingTop="7dp"
+        android:text="Welcome to Meet My Pup"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="356dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="casual"
+        android:text="Because your dog deserves a better love life than you."
+        android:textColor="#C52F7F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/gifView2"
+        android:layout_width="251dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/gif_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gifView3"
+        android:layout_width="202dp"
+        android:layout_height="191dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/gif_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

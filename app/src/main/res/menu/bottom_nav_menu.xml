@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feed_fragment"
+        android:title="Feed"
+        android:icon="@drawable/ic_feed"
+        app:exb_color="#FF78AA" />
+
+    <item
+        android:id="@+id/friend_list_fragment"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"
+        app:exb_color="#FF78AA" />
+
+    <item
+        android:id="@+id/match_fragment"
+        android:title="Match"
+        android:icon="@drawable/ic_match"
+        app:exb_color="#FF78AA" />
+
+    <item
+        android:id="@+id/profile_fragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:exb_color="#FF78AA" />
+</menu>
+

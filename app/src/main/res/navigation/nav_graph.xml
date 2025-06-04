@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onboarding_fragment">
+
+    <fragment
+        android:id="@+id/onboarding_fragment"
+        android:name="com.example.doggydatingapp.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" />
+    <fragment
+        android:id="@+id/signin_fragment"
+        android:name="com.example.doggydatingapp.signin.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/signup_fragment"
+        android:name="com.example.doggydatingapp.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/create_post_fragment"
+        android:name="com.example.doggydatingapp.feed.CreatePostFragment"
+        android:label="CreatePostFragment" />
+    <fragment
+        android:id="@+id/chat_fragment"
+        android:name="com.example.doggydatingapp.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat">
+
+        <argument
+            android:name="friendId"
+            app:argType="string" />
+        <argument
+            android:name="friendName"
+            app:argType="string" />
+        <argument
+            android:name="friendProfileImage"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/friend_list_fragment"
+        android:name="com.example.doggydatingapp.chat.FriendsListFragment"
+        android:label="fragment_friends_list"
+        tools:layout="@layout/fragment_friends_list">
+        <argument
+            android:name="friendId"
+            app:argType="string" />
+        <argument
+            android:name="friendName"
+            app:argType="string" />
+        <argument
+            android:name="friendProfileImage"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/user_info_fragment"
+        android:name="com.example.doggydatingapp.profile.UserInfoFragment"
+        android:label="UserInfoFragment" />
+    <fragment
+        android:id="@+id/location_fragment"
+        android:name="com.example.doggydatingapp.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/match_fragment"
+        android:name="com.example.doggydatingapp.swipe.SwipeFragment"
+        android:label="SwipeFragment" />
+    <dialog
+        android:id="@+id/match_popup"
+        android:name="com.example.doggydatingapp.swipe.MatchPopupDialog"
+        android:label="MatchPopupDialog" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.doggydatingapp.profile.ProfileFragment"
+        android:label="ProfileFragment">
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notification_fragment"
+        android:name="com.example.doggydatingapp.notifications.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/schedule_date_fragment"
+        android:name="com.example.doggydatingapp.schedule_date.ScheduleDateFragment"
+        android:label="ScheduleDateFragment" />
+    <fragment
+        android:id="@+id/feed_fragment"
+        android:name="com.example.doggydatingapp.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+</navigation>

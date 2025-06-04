@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:contentDescription="Close"
+            android:src="@drawable/quantum_ic_clear_grey600_24"
+            app:tint="#050505" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Schedule your date"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:hint="Search location"
+        app:endIconMode="clear_text">
+
+        <AutoCompleteTextView
+            android:id="@+id/et_search_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:hint="Pick date"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_medium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:hint="Pick time"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_medium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:prompt="@string/pick_activity_prompt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/friends_dropdown_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Invite friends">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/friends_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_schedule_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:clickable="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Schedule Date"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

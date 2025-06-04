@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_notifications"
+        android:enabled="true"
+        android:title="Notifications"
+        android:visible="true"
+        app:actionLayout="@layout/menu_notification_button"
+        app:showAsAction="always" />
+</menu>
+
